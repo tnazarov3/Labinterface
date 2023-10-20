@@ -9,7 +9,7 @@ bot = telebot.TeleBot('6362714649:AAEOjpU0NL6pu_DypST1JLIybi9U_WvxVMM')
 web_app = WebAppInfo(url="https://tnazarov3.github.io/LabInterface")
 keyboard = ReplyKeyboardMarkup(
     keyboard=[
-        [KeyboardButton(text="Знаки зодиака", web_app=web_app)]
+        [KeyboardButton(text="Достопримечательности Самара", web_app=web_app)]
     ],
     resize_keyboard=True
 )
