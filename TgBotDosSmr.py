@@ -2,9 +2,7 @@ import telebot
 from telebot import types
 from telebot.types import KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
 
-global msg
-
-bot = telebot.TeleBot('6362714649:AAEOjpU0NL6pu_DypST1JLIybi9U_WvxVMM')
+#bot = telebot.TeleBot('6362714649:AAEOjpU0NL6pu_DypST1JLIybi9U_WvxVMM')
 
 web_app = WebAppInfo(url="https://tnazarov3.github.io/LabInterface")
 keyboard = ReplyKeyboardMarkup(
