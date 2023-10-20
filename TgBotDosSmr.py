@@ -23,4 +23,6 @@ DISC = {
 @bot.message_handler(content_types='web_app_data')
 def buy_process(web_app_message):
     bot.send_message(web_app_message.chat.id, DISC[f'{web_app_message.web_app_data}'])
+
+bot.polling(none_stop=True, interval=0)
     
