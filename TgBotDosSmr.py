@@ -20,6 +20,8 @@ DISC = {
 }
 
 
-@dp.message_handler(content_types='web_app_data')
+@bot.message_handler(content_types='web_app_data')
 async def buy_process(web_app_message):
+    print(web_app_message) #вся информация о сообщении
+    print(web_app_message.web_app_data.data)
     await bot.send_message(web_app_message.chat.id, DISC[f'{web_app_message.web_app_data}'])
