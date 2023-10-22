@@ -1,3 +1,4 @@
+"""
 import telebot
 from telebot import types
 from telebot.types import KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
@@ -29,3 +30,4 @@ def buy_process(web_app_message):
 
 #bot.polling(none_stop=True, interval=0)
     
+"""
