@@ -2,15 +2,19 @@ import telebot
 from telebot import types
 from telebot.types import KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
 
-#bot = telebot.TeleBot('6362714649:AAEOjpU0NL6pu_DypST1JLIybi9U_WvxVMM')
+bot = telebot.TeleBot('6362714649:AAEOjpU0NL6pu_DypST1JLIybi9U_WvxVMM')
 
 web_app = WebAppInfo(url="https://tnazarov3.github.io/LabInterface")
-keyboard = ReplyKeyboardMarkup(
-    keyboard=[
-        [KeyboardButton(text="Достопримечательности Самары", web_app=web_app)]
-    ],
-    resize_keyboard=True
-)
+@bot.message_handler(commands=['start'])
+async def start(message: types.Message):
+    markup = types.ReplyKeyboardMarkup()
+    markup.add(types.KeyboardButton('Открыть', web_app = web_app)
+#keyboard = ReplyKeyboardMarkup(
+    #keyboard=[
+        #[KeyboardButton(text="Достопримечательности Самары", web_app=web_app)]
+    #],
+    #resize_keyboard=True
+#)
 
 DISC = {
     "1": "Благоприятными для Овнов в этот день будут физические",
