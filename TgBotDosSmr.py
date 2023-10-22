@@ -9,6 +9,7 @@ web_app = WebAppInfo(url="https://tnazarov3.github.io/LabInterface")
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
     markup.add(types.KeyboardButton('Открыть', web_app = web_app)
+    await message.answer('l', reply_markup=markup)
 #keyboard = ReplyKeyboardMarkup(
     #keyboard=[
         #[KeyboardButton(text="Достопримечательности Самары", web_app=web_app)]
